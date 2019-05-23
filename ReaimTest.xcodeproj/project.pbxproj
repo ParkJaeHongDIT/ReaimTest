@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9BC4FB9CFD0E1806ED724B /* Pods_ReaimTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82862C272031A498CCBC64A9 /* Pods_ReaimTest.framework */; };
 		4E69F30E22963AA8003126BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E69F30D22963AA8003126BA /* AppDelegate.swift */; };
 		4E69F31022963AA8003126BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E69F30F22963AA8003126BA /* ViewController.swift */; };
 		4E69F31322963AA8003126BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E69F31122963AA8003126BA /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204EDB81D46B1A5CD97B540A /* Pods-ReaimTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaimTest.debug.xcconfig"; path = "Target Support Files/Pods-ReaimTest/Pods-ReaimTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4E69F30A22963AA8003126BA /* ReaimTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaimTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E69F30D22963AA8003126BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E69F30F22963AA8003126BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4E69F31422963AA9003126BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E69F31722963AA9003126BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E69F31922963AA9003126BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82862C272031A498CCBC64A9 /* Pods_ReaimTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaimTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7ACAC7A1FC7E8703ACA4D1D /* Pods-ReaimTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaimTest.release.xcconfig"; path = "Target Support Files/Pods-ReaimTest/Pods-ReaimTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9BC4FB9CFD0E1806ED724B /* Pods_ReaimTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4E69F30C22963AA8003126BA /* ReaimTest */,
 				4E69F30B22963AA8003126BA /* Products */,
+				C6E0459F54835128CD214E8D /* Pods */,
+				7A8EBF0FC754FF05F8710891 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = ReaimTest;
 			sourceTree = "<group>";
 		};
+		7A8EBF0FC754FF05F8710891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82862C272031A498CCBC64A9 /* Pods_ReaimTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6E0459F54835128CD214E8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				204EDB81D46B1A5CD97B540A /* Pods-ReaimTest.debug.xcconfig */,
+				B7ACAC7A1FC7E8703ACA4D1D /* Pods-ReaimTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E69F31C22963AA9003126BA /* Build configuration list for PBXNativeTarget "ReaimTest" */;
 			buildPhases = (
+				8CBB778ABF6E7828BDE104EE /* [CP] Check Pods Manifest.lock */,
 				4E69F30622963AA8003126BA /* Sources */,
 				4E69F30722963AA8003126BA /* Frameworks */,
 				4E69F30822963AA8003126BA /* Resources */,
+				B94D11FD9C4CBB78CA86F06A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CBB778ABF6E7828BDE104EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReaimTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B94D11FD9C4CBB78CA86F06A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReaimTest/Pods-ReaimTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReaimTest/Pods-ReaimTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReaimTest/Pods-ReaimTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E69F30622963AA8003126BA /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		4E69F31D22963AA9003126BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204EDB81D46B1A5CD97B540A /* Pods-ReaimTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		4E69F31E22963AA9003126BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7ACAC7A1FC7E8703ACA4D1D /* Pods-ReaimTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
